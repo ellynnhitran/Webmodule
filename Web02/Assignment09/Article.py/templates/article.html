@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+
+    <h1><img src="../static/logo.svg" alt="This is the headline"></h1>
+    {% for c in content %}
+    <b>   . </b> <a href="{{c.link}}">{{c.content}}</a>
+    <br>
+    {% endfor %}
+    <a href="https://www.newyorker.com/books/flash-fiction/art-of-story">Books</a>
+    <br>
+    <a href="https://www.newyorker.com/books/flash-fiction/art-of-story">November 27, 2017 Issue</a>
+    <h3>What Mary Oliver's Critics Don't Understand</h3>
+    <h2>For America's most beloved poet, paying attention to nature is a springboard to the sacred.</h2>
+    <p>By <a href="https://www.newyorker.com/books/flash-fiction/art-of-story"> Ruth Franklin</a></p> 
+    <br>
+    <b>   . </b><img src="../static/facebook.svg" alt="">
+    <br>
+    <b>   . </b><img src="../static/twitter.svg" alt="">
+    <br>
+    <b>   . </b><img src="../static/email.svg" alt="">
+    <br>
+    <b>   . </b><img src="../static/img.jpg" alt="">
+    <br>
+    <p>Oliver uses nature as a springboard to the sacred - the beating heart of her work.</p>
+    <p> <small>Illustration by Deana Halsall</small> </p> 
+    <p>"Mary Oliver is saving my life," Paul Chowder, the title character of Nicholson Baker's novel
+     " <u>The Anthologist</u> ", scrawls in the margins of Oliver's " <u>New and Selected Poems, Volume 1.</u> "
+    A struggling poet, Chowder is suffering from a severe case of writer's block... </p>
+    <p>I dont know exactly what a prayer is. </p>
+    <p>I do know how to pay attention, how to fall down</p>
+    <p>into the grass, how to kneel down in the grass,</p>
+    <p>how to be idle and blessed, how to stroll through the fields, </p>
+    <p>which is what I have been doing all day</p>
+    <p>The cadences are almost Biblical. "Attention is the beginning of devotion," she
+        urges elsewhere </p>
+    <p>This article appears in the print edition of the November 27,2017</p>
+    
+    <h3>Most Popular</h3>
+
+    {% for p in popular %}
+    <p><b>   . </b>{{p.index}}</p>
+    <p>{{p.title}}</p>
+    <a href="{{p.url}}">{{p.name_url}}</a>
+    <p>By <u>{{p.author}}</u> </p>
+    {% endfor %}
+
+    <p>Daily Cartoon</p>
+    <h2><a href="https://www.newyorker.com/news">Daily Cartoon: Friday, November 24th</a></h2>
+    <h2>Forgetting the garnish.</h2>
+    <p>By <a href="https://www.newyorker.com/news">Liana Finck</a></p>
+    <p>Nov, 24, 2017</p>
+    <p>Elements</p>
+    <br>
+    <h2><a href="https://www.newyorker.com/news">At Berkeley, a new Generation of Ethical Learns
+    the Do's and Don'ts of Cybersecurity</a></h2>
+    <h2>How long would it take a junior computer-science major to disrupt an election?</h2>
+    <p>By <a href="https://www.newyorker.com/news">Anna Wiener</a></p>
+    <p>Nov, 24, 2017</p>
+    <p><a href="https://www.newyorker.com/news">Listen to the New Yorker Radio Hour</a></p>
+    <p><a href="https://www.newyorker.com/news">Buy the cover</a></p>
+    <p><a href="https://www.newyorker.com/news">Play the Jigsaw Puzzle</a></p>
+
+ 
+
+
+</body>
+</html>

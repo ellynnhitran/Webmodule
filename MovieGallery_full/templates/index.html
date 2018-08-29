@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie gallery</title>
+  <link rel="stylesheet" href="../static/index.css">
+  <link rel="stylesheet" href="../static/bg.png">
+</head>
+<body>
+  <div id="root">
+    <div id="sidebar">
+      <ul>
+        <li class="red">Trending movies</li>
+        <li class="red">History</li>
+        <li class="red">My collection</li>
+        <li class="red">Subscriptions</li>
+      </ul>
+    </div>
+    <div id="main_panel"> 
+      <div class="title">
+        <h1>Trending Movies</h1>
+      </div>
+      <div id="movie_list" >
+        {% for movie in movies %}
+          <div class="movie-item">
+            <img src="{{movie.image_url}}" alt="Placeholder image">
+            <h3>{{movie.title}}</h3>
+            <div>{{movie.casts}}</div>
+
+          </div>
+        {% endfor %}
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>

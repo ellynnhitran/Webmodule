@@ -1,0 +1,67 @@
+body {
+    height: 100vh;
+}
+
+/* border {
+    border: 2px solid;
+    border-radius: 25px;
+} */
+/* .w-200p {
+    width: 200px;
+}
+.h-200p {
+    height: 200px
+} */
+
+#root {
+    height: 100%;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.name{
+    display: flex;
+    color: white;
+    text-align: center;
+    /* justify-content: center; */
+    padding-top: 20px;
+    align-content: flex-start;
+
+}
+.white{
+    background-color: white;
+    width: 300px;
+    height: 1px;
+    /* margin-bottom: 30px;
+    /* margin-top: 30px; */
+    margin-top: 20px;
+    
+}
+#intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.teacher {
+    display: flex;
+    width: 25%;
+    height: 15vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+img {
+    justify-content: center;
+    border-radius: 75%;
+    width: 200px;
+    height: 200px;
+}
